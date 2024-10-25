@@ -3,9 +3,8 @@ import pandas as pd
 import pickle
 import os
 
-model_path = r"D:\Semester 5\Kuliah\ML\Tubes"
-classification_model_path = os.path.join(model_path, r'BestModel_CLF_GBT_Keras.pkl')
-regression_model_path = os.path.join(model_path, r'BestModel_REG_Lasso Regression_Keras.pkl')
+classification_model_path = 'BestModel_CLF_GBT_Keras.pkl'
+regression_model_path = 'BestModel_REG_Lasso Regression_Keras.pkl'
 
 if os.path.exists(classification_model_path):
     with open(classification_model_path, 'rb') as f:
